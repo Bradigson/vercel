@@ -13,6 +13,15 @@ class userService{
         let index = this.GetIndex(id);
         return userData[index];
     }
+
+
+
+    createUser(data){
+        userData.push(data);
+        return ({message  : "User created"});
+    }
+
+
 }
 
 module.exports = new userService();
